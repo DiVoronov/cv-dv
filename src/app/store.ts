@@ -2,12 +2,14 @@ import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { languageReducer } from './slices/languageSlice';
 import { menuOpenCloseReducer } from './slices/menuCloseSlice';
 import { themeReducer } from './slices/themeSlice';
+import { isScrollAppearReducer } from './slices/isScrollAppearSlice';
 
 export const store = configureStore({
   reducer: {
     language: languageReducer,
     menuOpenClose: menuOpenCloseReducer,
     theme: themeReducer,
+    isScrollAppear: isScrollAppearReducer,
   },
 });
 

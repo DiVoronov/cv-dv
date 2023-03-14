@@ -7,15 +7,25 @@ import { ICurrentThemesColor, ThemeContext } from '../../app/context/themeContex
 import { CustomizedSwitches } from './ThemeSwitch';
 import { LanguageSwitch } from './LanguageSwitch';
 import { useAppSelector } from '../../app/hooks';
+import { useSelector } from 'react-redux';
 
-export const Navbar = () => {
+interface INavbarProps {
+  position: string
+};
 
-  const currentTheme = useAppSelector( (state: RootState) => state.theme );
+export const Navbar: React.FC<INavbarProps> = ({ position }) => {
+
+  const currentTheme = useSelector( (state: RootState) => state.theme );
   
   const currentPalette: ICurrentThemesColor = useContext(ThemeContext)[currentTheme];
 
+  const theme = {
+    currentPalette,
+    position
+  };
+
   return (
-    <StyledNavbar theme={currentPalette}>
+    <StyledNavbar theme={theme}>
       <Box component='div' className='box-link'>
         <NavList/>
       </Box>

@@ -4,6 +4,8 @@ import FormGroup from '@mui/material/FormGroup';
 import Switch from '@mui/material/Switch';
 import { useAppDispatch } from '../../app/hooks';
 import { changeTheme } from '../../app/slices/themeSlice';
+import { RootState } from '../../app/store';
+import { useSelector } from 'react-redux';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -54,6 +56,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export const CustomizedSwitches = () => {
 
+  const isChecked: 'dark' | 'light' = useSelector( (state: RootState) => state.theme );
+
   const dispatch = useAppDispatch();
   const handleChangeTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
     const checked = e.currentTarget.checked;
@@ -66,7 +70,7 @@ export const CustomizedSwitches = () => {
 
   return (
     <FormGroup>
-      <MaterialUISwitch defaultChecked onChange={handleChangeTheme} />
+      <MaterialUISwitch onChange={handleChangeTheme} checked={ isChecked === 'dark' ? true : false } />
     </FormGroup>
   );
 };

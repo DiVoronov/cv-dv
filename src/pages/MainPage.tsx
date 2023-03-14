@@ -13,8 +13,10 @@ export const MainPage = () => {
         flexDirection: 'column', 
         justifyContent: 'center', 
         alignContent: 'center', 
-        alignItems: 'center'
-      }}>
+        alignItems: 'center',
+        width: '100vw'
+      }}
+    >
       <TopUnit/>
       <MediumUnit/>
       <LowerUnit/>

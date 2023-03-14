@@ -18,7 +18,7 @@ export const TopUnit = () => {
           <Box component='div' className='top-unit-photo-holder'>
             <Box component='img' className='top-unit-photo' src={avatar}/>
           </Box>
-          <Box component='div' className='top-unit-name'>Welcome!</Box>
+          <Box component='div' className='top-unit-welcome'>Welcome!</Box>
           <Box component='div' className='top-unit-name'>My name is Dmytro Voronov</Box>
           <Box component='div' className='top-unit-description'>I'm a Frontend React Developer</Box>
           <Box component='div' className='top-unit-links'>

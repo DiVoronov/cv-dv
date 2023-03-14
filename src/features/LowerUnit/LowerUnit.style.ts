@@ -21,6 +21,13 @@ width: 100%;
     flex-direction: column;
     gap: 2rem;
 
+    & .lower-unit-title {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: .2rem;
+      margin-bottom: 2rem;
+    }
+
     & .lower-unit-references-holder {
       display: flex;
       gap: 2rem;

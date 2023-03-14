@@ -24,11 +24,24 @@ width: 100%;
     flex-direction: column;
     /* border: 1px solid ${ props => props.theme.paletteFour }; */
     padding: 3rem;
-    gap: 1rem;
+    gap: .3rem;
+    font-size: 1.2rem;
+
+    & .top-unit-name {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: .2rem;
+    }
+
+    & .top-unit-description {
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: .2rem;
+    }
 
     & .top-unit-photo-holder {
-      width: 250px;
       height: 250px;
+      margin-bottom: 2rem;
 
       & .top-unit-photo {
         width: 250px;

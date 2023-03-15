@@ -11,7 +11,6 @@ export const IndividualSkill: React.FC<IIndividualSkillProps> = ({ skill }) => {
   const [ flipHoverClass, setFlipHoverClass ] = useState('');
 
   const handleSetFlipClassName = (e: React.MouseEvent<HTMLDivElement>) => {
-    console.log('flip-hover')
     e.stopPropagation();
     e.preventDefault();
     setFlipHoverClass('flip-hover');

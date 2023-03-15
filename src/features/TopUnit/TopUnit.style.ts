@@ -27,6 +27,11 @@ width: 100%;
     gap: .3rem;
     font-size: 1.2rem;
 
+    & .top-unit-welcome {
+      font-weight: 900;
+      letter-spacing: .2rem;
+    }
+    
     & .top-unit-name {
       font-size: 1.5rem;
       font-weight: 900;

@@ -5,6 +5,8 @@ import { useAppSelector } from '../../app/hooks';
 import { RootState } from '../../app/store';
 import { ICurrentThemesColor, ThemeContext } from '../../app/context/themeContext/themeContext';
 import avatar from '../../avatar.png';
+import { Links } from '../shared/Links/Links';
+import { SharedButton } from '../shared/SharedButton/SharedButton';
 
 export const TopUnit = () => {
 
@@ -22,10 +24,9 @@ export const TopUnit = () => {
           <Box component='div' className='top-unit-name'>My name is Dmytro Voronov</Box>
           <Box component='div' className='top-unit-description'>I'm a Frontend React Developer</Box>
           <Box component='div' className='top-unit-links'>
-            {/* <LinksList/> */}
-            links
+            <Links/>
           </Box>
-          <Box component='button' className='top-unit-cv'>DOWNLOAD A CV</Box>
+          <SharedButton text='DOWNLOAD RESUME' link={process.env.REACT_APP_LINK_RESUME}/>
         </Box>
       </Box>
     </StyledTopUnit>

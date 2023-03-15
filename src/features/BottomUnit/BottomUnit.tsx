@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import { useAppSelector } from '../../app/hooks';
 import { RootState } from '../../app/store';
 import { ICurrentThemesColor, ThemeContext } from '../../app/context/themeContext/themeContext';
+import { Links } from '../shared/Links/Links';
 
 export const BottomUnit = () => {
 
@@ -13,10 +14,9 @@ export const BottomUnit = () => {
   return (
     <StyledBottomUnit theme={currentPalette}>
       <Box component='div' className='bottom-unit-holder'>
-        <Box component='div' className='bottom-unit-title'>Links</Box>
+        {/* <Box component='div' className='bottom-unit-title'>Links</Box> */}
         <Box component='div' className='bottom-unit-links'>
-          <Box>links</Box>
-          {/* <LinksList/> */}
+          <Links/>
         </Box>
       </Box>
     </StyledBottomUnit>

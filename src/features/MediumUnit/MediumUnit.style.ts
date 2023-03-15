@@ -5,7 +5,7 @@ export const StyledMediumUnit = styled.div`
 display: flex;
 justify-content: center;
 padding: 5rem;
-border-bottom: 1px solid ${ props => props.theme.paletteFour };
+/* border-bottom: 1px solid ${ props => props.theme.paletteFour }; */
 background: ${ props => props.theme.paletteOne };
 color: ${ props => props.theme.paletteFive };
 width: 100%;
@@ -26,9 +26,11 @@ width: 100%;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
 
     & > div {
       border: 1px solid ${ props => props.theme.paletteFour };
+      width: 300px;
       padding: 1rem;
       display: flex;
       flex-direction: column;
@@ -50,6 +52,7 @@ width: 100%;
 
       & .skill-title {
         font-size: 1.5rem;
+        overflow-wrap: normal;
       }
 
       & .skills-options > div {

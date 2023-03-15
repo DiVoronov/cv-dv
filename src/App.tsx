@@ -5,6 +5,7 @@ import './App.css';
 // import { Navbar } from './features/Navbar/Navbar';
 import { MainPage } from './pages/MainPage';
 import { ParallaxNavbar } from './features/Navbar/ParallaxNavbar/ParallaxNavbar';
+import { Scroll } from './features/shared/Scroll/Scroll';
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
           <Route path="/contacts" element={<></>} />
           <Route path="*" element={<></>} />
         </Routes>
+        <Scroll/>
       </BrowserRouter>
     </Box>
   );

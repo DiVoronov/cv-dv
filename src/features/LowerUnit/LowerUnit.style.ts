@@ -10,7 +10,8 @@ width: 100%;
 & .lower-unit-border-shape {
   display: flex;
   justify-content: center;
-  padding: 5rem;
+  padding: 0px 5rem 7rem 5rem;
+
   /* width: 100%; */
   border-radius: 0% 0% 25% 25%;
   background: ${ props => props.theme.paletteOne };

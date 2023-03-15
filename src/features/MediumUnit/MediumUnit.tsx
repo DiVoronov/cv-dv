@@ -20,7 +20,7 @@ export const MediumUnit = () => {
 
   const skillset: IIndividualSkill[] = [
     { id: 1, title: 'Programming languages', value: ['TypeScript', 'JavaScript (ES6+)'], className: 'medium-unit-programming-languages' },
-    { id: 1, title: 'Stack', value: [
+    { id: 2, title: 'Stack', value: [
       'React and React Hooks',
       'Redux (Redux Toolkit, RTK Query)',
       'HTML5, CSS, SCSS',
@@ -30,14 +30,15 @@ export const MediumUnit = () => {
       'Git and Github',
       'React Router',
     ], className: 'medium-unit-stack' },
-    { id: 1, title: 'UI libraries', value: [
+    { id: 3, title: 'UI libraries', value: [
       'Styled Components',
       'Material UI',
       'Bootstrap',
       'Tailwind CSS',
       'Materialize CSS',
     ], className: 'medium-unit-ui' },
-    { id: 1, title: 'Language', value: ['English - native', 'Українська - рідна'], className: 'medium-unit-language' },
+    { id: 4, title: 'Language', value: ['English - native', 'Українська - рідна'], className: 'medium-unit-language' },
+
   ];
 
   return (

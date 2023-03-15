@@ -16,6 +16,7 @@ top: 0px;
 left: 0px;
 /* transition: appear 1s linear ease-in-out; */
 animation: appear 0.4s ease-in;
+z-index: 1000;
 
 & .box-disappear {
   animation: disappear 0.4s ease-out;

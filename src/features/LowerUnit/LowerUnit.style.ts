@@ -32,6 +32,8 @@ width: 100%;
       display: flex;
       gap: 2rem;
       flex-wrap: wrap;
+      justify-content: center;
+
     }
   }
 }

@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { useAppDispatch } from '../../app/hooks';
 import { changeLanguage } from '../../app/slices/languageSlice';
 
-const languages = [ 'EN', 'UA' ];
+const languages = [ 'en', 'ua' ];
 
 export const LanguageSwitch = () => {
 
@@ -27,14 +27,14 @@ export const LanguageSwitch = () => {
         <TextField
           id="outlined-select-currency"
           select
-          defaultValue="EN"
+          defaultValue="en"
           size='small'
           color='error'
           onChange={handleLanguageChange}
         >
           {languages.map((option) => (
             <MenuItem key={option} value={option}>
-              {option}
+              {option.toUpperCase()}
             </MenuItem>
           ))}
         </TextField>

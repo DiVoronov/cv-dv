@@ -17,6 +17,55 @@ left: 0px;
 /* transition: appear 1s linear ease-in-out; */
 animation: appear 0.4s ease-in;
 z-index: 1000;
+border: none !important;
+
+& .box-link-mobileMenu {
+  position: absolute; 
+  top: 50px;
+  left: 10px;
+  transition: display 1s;
+  animation: appearMobileMenu 0.4s ease-in;
+
+  & > div {
+    background: ${ props => props.theme.currentPalette.paletteFive };
+    /* padding: 2rem; */
+    border-radius: 0px 0px 20px 20px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      /* gap: 1rem; */
+
+      & > a {
+        border-radius: 19px;
+        padding: 1rem 2rem;
+        width: 100%;
+        transition: background .3s, color .3s;
+
+        &:hover {
+          color: ${ props => props.theme.currentPalette.paletteFive };
+          background: ${ props => props.theme.currentPalette.paletteOne };
+        }
+      }
+    }
+  }
+}
+
+& .box-link-navList {
+  display: flex;
+}
+
+& .box-link-menuIcon {
+  padding: .5rem;
+  display: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background .4s;
+
+  &:active {
+    background: ${ props => props.theme.currentPalette.paletteOne };
+  }
+}
 
 & .box-disappear {
   animation: disappear 0.4s ease-out;
@@ -61,6 +110,16 @@ z-index: 1000;
   }
 }
 
+@keyframes appearMobileMenu {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
 @keyframes disappear {
   from {
@@ -73,4 +132,14 @@ z-index: 1000;
   }
 }
 
+
+@media screen and (max-width: 550px) {
+  & .box-link-navList {
+    display: none;
+  }
+
+  & .box-link-menuIcon {
+    display: flex;
+  }
+}
 `;

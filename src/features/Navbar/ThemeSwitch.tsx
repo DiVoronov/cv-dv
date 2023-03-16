@@ -70,7 +70,7 @@ export const CustomizedSwitches = () => {
 
   return (
     <FormGroup>
-      <MaterialUISwitch onChange={handleChangeTheme} checked={ isChecked === 'dark' ? true : false } />
+      <MaterialUISwitch onChange={handleChangeTheme} size='small' checked={ isChecked === 'dark' ? true : false } />
     </FormGroup>
   );
 };

@@ -5,6 +5,7 @@ import { RootState } from '../../../app/store';
 import { ICurrentThemesColor, ThemeContext } from '../../../app/context/themeContext/themeContext';
 import { useSelector } from 'react-redux';
 import { IPortfolioReference } from '../../LowerUnit/LowerUnit';
+import { LanguageContext } from '../../../app/context/languageContext';
 
 interface IStyledPortfolioReferenceProps {
   portfolioReference: IPortfolioReference
@@ -20,6 +21,8 @@ export const PortfolioReference: React.FC<IStyledPortfolioReferenceProps> = ({ p
   const handleRenderCoverTrue = () => {setRenderCoverTitle(true)};
   const handleRenderCoverFalse = () => {setRenderCoverTitle(false)};
 
+  const currentLanguage = useSelector((state: RootState) => state.language);
+  const languageContextValue = useContext(LanguageContext).lowerUnit;
 
   return (
     <StyledPortfolioReference theme={currentPalette}>
@@ -47,12 +50,12 @@ export const PortfolioReference: React.FC<IStyledPortfolioReferenceProps> = ({ p
           <Box component='div' className='reference-linkGH-and-linkWebsite-holder'>
             <Box component='div' className='reference-linkGH-holder'>
               <Box component='a' href={portfolioReference.linkGH} target='blank'>
-                Repository
+                {languageContextValue.onlineStore.repository[currentLanguage]}
               </Box>
             </Box>
             <Box component='div' className='reference-linkWebsite-holder'>
               <Box component='a' href={portfolioReference.linkWebsite} target='blank'>
-                Visit website
+                {languageContextValue.onlineStore.visit[currentLanguage]}
               </Box>
             </Box>
           </Box>

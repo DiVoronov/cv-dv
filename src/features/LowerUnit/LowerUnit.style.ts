@@ -26,7 +26,8 @@ width: 100%;
       font-size: 2rem;
       font-weight: 900;
       letter-spacing: .2rem;
-      margin-bottom: 2rem;
+      margin: 2rem;
+
     }
 
     & .lower-unit-references-holder {
@@ -36,6 +37,13 @@ width: 100%;
       justify-content: center;
 
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  & .lower-unit-border-shape {
+    padding: 0px 1rem 10rem 1rem;
+    border-radius: 0% 0% 20% 20%;
   }
 }
 `;

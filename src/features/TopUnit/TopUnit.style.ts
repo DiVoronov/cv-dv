@@ -119,4 +119,18 @@ width: 100%;
     rotate: -360deg;
   }
 }
+
+@media screen and (max-width: 650px) {
+  & .top-unit-photo-holder {
+    & .top-unit-hover-circle {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  & .top-unit {
+    border-radius: 40% 40% 0% 0%;
+  }
+}
 `;

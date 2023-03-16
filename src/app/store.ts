@@ -3,6 +3,7 @@ import { languageReducer } from './slices/languageSlice';
 import { menuOpenCloseReducer } from './slices/menuCloseSlice';
 import { themeReducer } from './slices/themeSlice';
 import { isScrollAppearReducer } from './slices/isScrollAppearSlice';
+import { mobileMenuOpenCloseReducer } from './slices/mobileMenuOpenClose';
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     menuOpenClose: menuOpenCloseReducer,
     theme: themeReducer,
     isScrollAppear: isScrollAppearReducer,
+    mobileMenuOpenClose: mobileMenuOpenCloseReducer,
   },
 });
 

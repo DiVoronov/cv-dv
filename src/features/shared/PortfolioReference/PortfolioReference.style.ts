@@ -119,4 +119,16 @@ border: 1px solid ${ props => props.theme.paletteFive };
     left: 0px;
   }
 }
+
+@media screen and (max-width: 620px) {
+  & .portfolio-reference-for-position {
+    & .portfolio-reference-cover {
+      & > div {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
 `;

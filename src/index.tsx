@@ -6,7 +6,7 @@ import { App } from './App';
 import './index.css';
 import { ThemeContext, themes } from './app/context/themeContext/themeContext';
 import { ParallaxProvider } from "react-scroll-parallax";
-import { LanguageContext, contentLanguages } from './app/context/context';
+import { LanguageContext, contentLanguages } from './app/context/languageContext';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);

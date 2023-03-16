@@ -8,6 +8,8 @@ import avatar from '../../avatar.png';
 import { Links } from '../shared/Links/Links';
 import { SharedButton } from '../shared/SharedButton/SharedButton';
 import { HoverSpinner } from './HoverSpinner/HoverSpinner';
+import { useSelector } from 'react-redux';
+import { LanguageContext } from '../../app/context/languageContext';
 
 export const TopUnit = () => {
 
@@ -18,6 +20,9 @@ export const TopUnit = () => {
   const handleDisplayHoverTrue = () => { setDisplayHover(true) };
   const handleDisplayHoverFalse = () => { setDisplayHover(false) };
 
+  const currentLanguage = useSelector((state: RootState) => state.language);
+  const languageContextValue = useContext(LanguageContext).topUnit;
+  
   return (
     <StyledTopUnit theme={currentPalette}>
       <Box component='div' className='top-unit'>
@@ -26,13 +31,13 @@ export const TopUnit = () => {
             <Box component='img' className='top-unit-photo' src={avatar} />
             <HoverSpinner displayHover={displayHover} currentTheme={currentTheme}/>
           </Box>
-          <Box component='div' className='top-unit-welcome'>Welcome!</Box>
-          <Box component='div' className='top-unit-name'>My name is Dmytro Voronov</Box>
-          <Box component='div' className='top-unit-description'>I'm a Frontend React Developer</Box>
+          <Box component='div' className='top-unit-welcome'>{languageContextValue.welcome[currentLanguage]}</Box>
+          <Box component='div' className='top-unit-name'>{languageContextValue.name[currentLanguage]}</Box>
+          <Box component='div' className='top-unit-description'>{languageContextValue.occupation[currentLanguage]}</Box>
           <Box component='div' className='top-unit-links'>
             <Links/>
           </Box>
-          <SharedButton text='DOWNLOAD RESUME' link={process.env.REACT_APP_LINK_RESUME}/>
+          <SharedButton text={languageContextValue.resume[currentLanguage]} link={process.env.REACT_APP_LINK_RESUME}/>
         </Box>
       </Box>
     </StyledTopUnit>

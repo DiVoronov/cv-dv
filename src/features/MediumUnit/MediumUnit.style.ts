@@ -5,8 +5,14 @@ export const StyledMediumUnit = styled.div`
 display: flex;
 justify-content: center;
 padding: 5rem;
-/* border-bottom: 1px solid ${ props => props.theme.paletteFour }; */
+/* border-top: 3px dashed ${ props => props.theme.paletteFour };
+border-bottom: 3px dashed ${ props => props.theme.paletteFour }; */
+
 background: ${ props => props.theme.paletteOne };
+/* background: grey; */
+position: relative;
+overflow: hidden;
+
 color: ${ props => props.theme.paletteFive };
 width: 100%;
 
@@ -14,6 +20,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  z-index: 100;
 
   & .medium-unit-title {
     font-size: 2rem;
@@ -30,6 +37,7 @@ width: 100%;
 
     & > div {
       border: 1px solid ${ props => props.theme.paletteFour };
+      background: ${ props => props.theme.paletteOne };
       width: 300px;
       padding: 1rem;
       display: flex;

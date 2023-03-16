@@ -28,6 +28,7 @@ width: 100%;
     font-size: 1.2rem;
 
     & .top-unit-welcome {
+      margin-top: 1rem;
       font-weight: 900;
       letter-spacing: .2rem;
       z-index: 500;

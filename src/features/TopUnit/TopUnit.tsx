@@ -7,11 +7,7 @@ import { ICurrentThemesColor, ThemeContext } from '../../app/context/themeContex
 import avatar from '../../avatar.png';
 import { Links } from '../shared/Links/Links';
 import { SharedButton } from '../shared/SharedButton/SharedButton';
-
-import cirOne from './cirOne.png';
-import cirTwo from './cirTwo.png';
-import cirThree from './cirThree.png';
-import cirFour from './cirFour.png';
+import { HoverSpinner } from './HoverSpinner/HoverSpinner';
 
 export const TopUnit = () => {
 
@@ -28,12 +24,7 @@ export const TopUnit = () => {
         <Box component='div' className='top-unit-holder'>
           <Box component='div' className='top-unit-photo-holder' onMouseEnter={handleDisplayHoverTrue} onMouseLeave={handleDisplayHoverFalse}>
             <Box component='img' className='top-unit-photo' src={avatar} />
-            <Box component='div' className='top-unit-hover-circle' style={{opacity: displayHover ? '1' : '0', transition: 'opacity .3s'}}>
-              <Box component='img' className='top-unit-cirOne' src={cirOne} alt='' />
-              <Box component='img' className='top-unit-cirTwo' src={cirTwo} alt='' />
-              <Box component='img' className='top-unit-cirThree' src={cirThree} alt='' />
-              {/* <Box component='img' className='top-unit-cirFour' src={cirFour} alt='' /> */}
-            </Box>
+            <HoverSpinner displayHover={displayHover} currentTheme={currentTheme}/>
           </Box>
           <Box component='div' className='top-unit-welcome'>Welcome!</Box>
           <Box component='div' className='top-unit-name'>My name is Dmytro Voronov</Box>

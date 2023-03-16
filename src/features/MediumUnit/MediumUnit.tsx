@@ -37,7 +37,7 @@ export const MediumUnit = () => {
       'Tailwind CSS',
       'Materialize CSS',
     ], className: 'medium-unit-ui' },
-    { id: 4, title: 'Language', value: ['English - native', 'Українська - рідна'], className: 'medium-unit-language' },
+    { id: 4, title: 'Language', value: ['English - B2', 'Українська - рідна'], className: 'medium-unit-language' },
 
   ];
 

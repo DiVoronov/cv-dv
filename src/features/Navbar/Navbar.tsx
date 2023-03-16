@@ -29,9 +29,9 @@ export const Navbar: React.FC<INavbarProps> = ({ position }) => {
       <Box component='div' className='box-link'>
         <NavList/>
       </Box>
-      <Box component='div' className='box-logo'>
+      {/* <Box component='div' className='box-logo'>
         <Box component='div' className='box-logo-item'>Resume-DV</Box>
-      </Box>
+      </Box> */}
       <Box component='div' className='box-buttons'>
         <Box component='div' className='box-buttons-holder'>
           <CustomizedSwitches/>

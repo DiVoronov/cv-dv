@@ -25,7 +25,18 @@ z-index: 1000;
 & .box-link a {
   color: ${ props => props.theme.currentPalette.paletteOne };
   text-decoration: none;
+  font-weight: 900;
+  letter-spacing: .2rem;
   margin: 0px 1rem;
+  transition: background .4s;
+  background: ${ props => props.theme.currentPalette.paletteFive };
+  padding: .3rem;
+  border-radius: 5px;
+
+  &:hover {
+    background: ${ props => props.theme.currentPalette.paletteOne };
+    color: ${ props => props.theme.currentPalette.paletteFive };
+  }
 }
 
 & .box-buttons-holder {
@@ -61,6 +72,5 @@ z-index: 1000;
     transform: translateY(-40px);
   }
 }
-
 
 `;

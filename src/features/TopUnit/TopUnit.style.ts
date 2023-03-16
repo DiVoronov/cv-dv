@@ -30,6 +30,7 @@ width: 100%;
     & .top-unit-welcome {
       font-weight: 900;
       letter-spacing: .2rem;
+      z-index: 500;
     }
     
     & .top-unit-name {
@@ -66,6 +67,7 @@ width: 100%;
 
         & > img {
           position: absolute;
+          /* border: 2px solid #fff; */
         }
 
         & .top-unit-cirOne {

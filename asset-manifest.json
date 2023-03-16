@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cv-dv/static/css/main.1a2ffb83.css",
+    "main.js": "/cv-dv/static/js/main.8c245b78.js",
+    "static/media/shop.png": "/cv-dv/static/media/shop.48392c371c8370117634.png",
+    "static/media/signUp.png": "/cv-dv/static/media/signUp.14e2a78b372a285f9e7c.png",
+    "static/media/jobs.png": "/cv-dv/static/media/jobs.0c408b00a3ea2a9d3ad6.png",
+    "static/media/avatar.png": "/cv-dv/static/media/avatar.d62758c1b77949407244.png",
+    "static/media/wordle.png": "/cv-dv/static/media/wordle.076042d7f80af7d77a49.png",
+    "static/media/linkedin.png": "/cv-dv/static/media/linkedin.032cf8a63be2f0f4d425.png",
+    "static/media/cirOne.png": "/cv-dv/static/media/cirOne.9e51b7a04e53bb9bed5e.png",
+    "static/media/cirThree.png": "/cv-dv/static/media/cirThree.3a5827c94319dc60ab23.png",
+    "static/media/cirTwo.png": "/cv-dv/static/media/cirTwo.f56ae5455f4d1b2e76f8.png",
+    "static/media/cirFourWhite.png": "/cv-dv/static/media/cirFourWhite.c67907e41ff8018e5af5.png",
+    "static/media/cirThreeWhite.png": "/cv-dv/static/media/cirThreeWhite.b9e24f39ed4951b3fa72.png",
+    "static/media/cirTwoWhite.png": "/cv-dv/static/media/cirTwoWhite.1162414102a9e06e0f0b.png",
+    "index.html": "/cv-dv/index.html",
+    "main.1a2ffb83.css.map": "/cv-dv/static/css/main.1a2ffb83.css.map",
+    "main.8c245b78.js.map": "/cv-dv/static/js/main.8c245b78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a2ffb83.css",
+    "static/js/main.8c245b78.js"
+  ]
+}
